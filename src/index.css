@@ -145,9 +145,24 @@ nav {
 }
 .nav-header {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+}
+.bars-container{
+  
+  height: 30px;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.bar{
+  margin: 2;
+  height: 30px;
+  width: 40px;
 }
 .nav-toggle {
   font-size:2.5rem;
@@ -200,6 +215,7 @@ nav {
   }
   .nav-header {
     padding: 0;
+    width: 100vw;
   }
   .nav-toggle {
     display: none;
